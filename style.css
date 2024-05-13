@@ -130,21 +130,21 @@ body{
     transition: 0.5s;
 }
 
-.sabre:checked .luz{
+.sabre:hover .luz{
     height: 32em;
     box-shadow: 0 -10px 30px 10px red;
     border: 2px solid red;
     animation: flicker 0.3s infinite linear;
 }
 
-.sabre:checked .luz:before{
+.sabre:hover .luz:before{
     width: 13em;
     box-shadow: 0 0 20px 5px red;
     border: 2px solid red;
     animation: flicker 0.2s infinite linear;
 }
 
-.sabre:checked:before{
+.sabre:hover:before{
     opacity: 1;
 }
 
