@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabre de luz</title>
     <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </head>
 <body>
     <div class="sabre">
@@ -12,7 +13,15 @@
         <div class="topo"></div>
         <div class="meio"></div>
         <div class="fim"></div>
+        <audio src="Sith Lightsaber Sound FX (mp3cut.net).mp3" id="sound"></audio>
     </div>
 
+    <script>
+        var beepOnne=$("#sound")[0];
+        $(".sabre")
+        .mouseenter(function(){
+            beepOnne.play()
+        });
+    </script>
 </body>
 </html>
